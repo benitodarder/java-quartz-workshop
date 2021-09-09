@@ -17,3 +17,9 @@ Program arguments:
 * -unscheduleJobs, unschedule jobs at the end. Optional.
 * -shutdownScheduler, shutdown scheduler. Does no wait for jobs to end. Optional.
 
+Sample command lines: 
+
+* java -jar target/quartz-hello-world-1.0-jar-with-dependencies.jar 30000  -maxSleepTime 10000 -cron '0/5 * * * * ? *' -deleteJobsBefore
+* java -jar target/quartz-hello-world-1.0-jar-with-dependencies.jar 90000 
+
+
