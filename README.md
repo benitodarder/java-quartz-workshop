@@ -11,6 +11,6 @@ Quirks & feaures:
     - Tested with HSQLDB 2.6.0 & 2.4.1
     - HSQLDB schema does not work directly and BINARY type must be changed to BLOB.
     - User creation:
-        # CREATE USER QUARTZ PASSWORD QUARTZ ADMIN;
-        # DROP USER SA;
+        * CREATE USER QUARTZ PASSWORD QUARTZ ADMIN;
+        * DROP USER SA;
 
