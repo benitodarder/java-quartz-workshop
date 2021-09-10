@@ -2,10 +2,6 @@
 
 Simple clusterable hello world project.
 
-Quartz 2.3.0, quartz-2.3.0-distribution.tar.gz, did not include the /docs/dbTables, so quartz-2.2.3-distribution.tar.gz was used.
-
-HSQLDB schema does not work directly and BINARY type must be changed to BLOB.
-
 Program arguments:
 
 * Running time in ms. Mandatory.
@@ -20,6 +16,7 @@ Program arguments:
 Sample command lines: 
 
 * java -jar target/quartz-hello-world-1.0-jar-with-dependencies.jar 30000  -maxSleepTime 10000 -cron '0/5 * * * * ? *' -deleteJobsBefore
-* java -jar target/quartz-hello-world-1.0-jar-with-dependencies.jar 90000 
+* java -jar target/quartz-hello-world-1.0-jar-with-dependencies.jar 90000
+ java -cp /c/Programs/hsqldb/2.4.1/hsqldb/lib/hsqldb.jar org.hsqldb.Server -database.0 /c/Users/benitodarder/Development/databases/quartz-hello-world/quartz-hello-world -dbname.0 quartz
 
 
