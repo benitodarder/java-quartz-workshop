@@ -2,7 +2,7 @@
 
 Examples:
 
-* quartz-hello-world simple example clusterable
+* quartz-hello-world simple clusterable example
 
 Quirks & feaures:
 
