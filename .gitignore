@@ -24,3 +24,5 @@ hs_err_pid*
 **/target/**
 /**/nbactions.xml
 /**/nb-configuration.xml
+/quartz-hello-world/target/
+/quartz-tomee/target/

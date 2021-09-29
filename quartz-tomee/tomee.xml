@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+ <!-- see http://tomee.apache.org/containers-and-resources.html -->
+
+ <!-- activate next line to be able to deploy applications in apps -->
+ <!-- <Deployments dir="apps" /> -->
+
+ <Resource id="ds/tomeeQuartz" type="DataSource">
+  JdbcDriver org.hsqldb.jdbcDriver
+  JdbcUrl jdbc:hsqldb:hsql://localhost:9001/tomeequartz
+  UserName=QUARTZ
+  Password=QUARTZ
+  testWhileIdle	true
+  testOnBorrow	true
+  testOnReturn	false
+  validationQuery	SELECT 1 FROM INFORMATION_SCHEMA.SYSTEM_USERS
+  TimeBetweenEvictionRunsMillis 30000
+  # connectionProperties	"useUnicode=yes;characterEncoding=utf8;"
+  DataSourceCreator dbcp
+  accessToUnderlyingConnectionAllowed	true
+  maxWaitMillis       5000
+  maxConnLifetimeMillis       300000
+  accessToUnderlyingConnectionAllowed true
+  removeAbandonedOnMaintenance        true
+  removeAbandonedTimeout      60
+ </Resource>
+</tomee>
