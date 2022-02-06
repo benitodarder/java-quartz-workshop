@@ -1,4 +1,4 @@
-# quartz-workshop
+# java-quartz-workshop
 
 Examples:
 
